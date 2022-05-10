@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/streamline-icon-food-barbeque-pot@250x250.PNG" type="image/icon">
+    <title>Barbecue Meter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="grid">
+            <!--Imagem, Texto e Resultado-->
+            <div class="presentation">
+                <h1>Saiba a quantidade certa de carnes e bebidas para o seu churrasco ser um verdadeiro sucesso!</h1>
+                <img
+                    src="./images/kisspng-barbecue-stock-photography-royalty-free-clip-art-cartoon-family-barbecue-5a8d8036cc27d0.3136887715192228388362.png">
+            </div>
+            <!--Box de Calculo-->
+            <div class="box">
+                <div class="box-container">
+                    <h2 id="churrasco">Churrascômetro</h2>
+                    <label for="adults">Adultos</label>
+                    <input id="adults" name="adults" type="number" placeholder="Quantidade">
+                    <label for="kids">Crianças</label>
+                    <input id="kids" name="kids" type="number" placeholder="Quantidade">
+                    <label for="drinkers">Quantas pessoas bebem?</label>
+                    <input id="drinkers" name="drinkers" type="number" placeholder="Quantidade">
+                    <label for="adults">Duração do churrasco</label>
+                    <input id="duration" name="duration" type="number" placeholder="Duração (h)">
+                    <button onclick="calcular()" onmouseover="onOver(this)" onmouseout="onOut(this)">Calcular</button>
+                    <div id="result"></div>
+                    <div id="barbecue-image">
+                        <a href='https://br.freepik.com/fotos-vetores-gratis/churrasco'>
+                            <img src="./images/55258.jpg" alt="churrasqueira" width="150px">
+                        </a>
+                        <p>Churrasco vetor criado por gstudioimagen
+                            - br.freepik.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
